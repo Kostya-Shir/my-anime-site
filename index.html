@@ -9,101 +9,194 @@
 
 </head>
 <body>
-    <header>
-        <h1>
-            Мир "Тетради Смерти"
-        </h1>
-        <h2>
-            Цель оправдывает любые средства
-        </h2>
-    </header>
-    <main>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Мир "Тетради смерти"</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Галерея</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#donate">Донаты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#feedback">Обратная связь</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    <main class="container my-5">
+        <header class="mb-5 text-center">
+            <h1 class="display-4 fw-bold">
+                Мир "Тетради Смерти"
+            </h1>
+            <h2 class="h4 text-muted">
+                Цель оправдывает любые средства
+            </h2>
+        </header>
         <!-- Раздел о главном герое -->
-        <section>
-            <h3>
-                главный герой: Ягами Лайт  
+        <section class="mb-5">
+            <h3 class="h4">
+                Главный герой: Ягами Лайт  
             </h3>
-            <p>
+            <p class="text-secondary">
                 Главным героем является обыкновенный на первый взгляд подросток, ученик старшей школы, которому выпала удача воспользоваться необчным артефактом из загробной жизни, а именно тетрадью смерти. И вот получив этот артефакт Ягами Лайт узнаёт о его силе и решает стать спасителем мира, верша правосудие над преступниками с помощью неё.
             </p>
         </section>
         <!-- Раздел об окружении -->
-        <section>
-            <h3>
+        <section class="mb-5">
+            <h3 class="h4">
                 Окружение Ягами
             </h3>
-            <ul>
-                <li>
+            <ul class="list-group">
+                <li class="list-group-item">
                     <strong>Отец Ягами Лайта</strong> - главный детектив, который по иронии судьбы охотиться на своего сына
                 </li>
-                <li>
+                <li class="list-group-item">
                     <strong>Эл</strong> - своего рода шерлок холмс, главный соперник главного героя, отличающийся уже раскрытыми сложными преступлениями
                 </li>
-                <li>
+                <li class="list-group-item">
                     <strong>Рюк</strong> - Бог смерти, владелец тетради смерти, главный зритель всех деяний Ягами Лайта, обожает яблоки
                 </li>
             </ul>
         </section>
         <!-- Раздел с любимыми сериями -->
-        <section>
-            <h3>
+        <section class="mb-5">
+            <h3 class="h4">
                 Любимые эпизоды
             </h3>
-            <ol>
-                <li>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">
                     <i>Казнь</i> - L выпускает Лайта и Мису из заключения. L сообщает, что штаб-квартира расследования переносится в построенный им 23-этажный дом. В этом же доме поселяют Мису. Лайт и L, скованные наручниками, продолжают совместное расследование дела Киры
                 </li>
-                <li>
+                <li class="list-group-item">
                     <i>Отец</i> - Лайт отказывается от тетради и пересылает её в полицию. Соитиро Ягами получает от Рюка глаза Бога Смерти и видит настоящее имя Мэлло, но не успевает записать его в тетрадь. Соитиро Ягами умирает. Тетрадь возвращается её владельцу — синигами Сидо
                 </li>
-                <li>
+                <li class="list-group-item">
                     <i>Новый мир</i> - Долгая битва между Кирой и его преследователями подходит к концу, Кира умирает, тетрадь смерти возвращается к богу смерти.
                 </li>
             </ol>
         </section>
         <!-- Галерея -->
-        <section>
-            <h3>
+        <section id="gallery" class="mb-5">
+            <h3 class="h4 mb-3">
                 Галерея
             </h3>
-            <p>
+            <p class="text-secondary">
                 Изображения героев
             </p>
-            <img src="Бог_смерти.jpg">
-            <img src="Ягами_Лайт.jpg">
-            <img src="Эл.jpg">
+            <!-- [[1, 2, 3, 4], [], []] -->
+            <div class="row g-3">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="Бог_смерти.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Рюк</h5>
+                            <p class="card-text">Бог смерти, наблюдащий за Лайтом</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="Ягами_Лайт.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Ягами Лайт</h5>
+                            <p class="card-text">Главный герой, владелец тетради</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="Эл.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Эл (L)</h5>
+                            <p class="card-text">Главный детектив, преследующий Лайта</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <!-- Ссылки на внешний ресурс -->
-        <section>
-            <h3>
+        <section class="mb-5">
+            <h3 class="h4">
                 Полезные ссылки
             </h3>
-            <p>
-                Официальный сайт аниме: <a href="https://www.viz.com/death-note">
+            <p class="text-secondary">
+                Официальный сайт аниме: <a href="https://www.viz.com/death-note" class="link-primary">
                     Тетрадь Смерти VIZ
                 </a>
             </p>
         </section>
         <!-- Донаты -->
-        <section>
-            <h3>
+        <section class="mb-5" id="donate">
+            <h3 class="h4">
                 Донат
             </h3>
             <p>
                 Ваша поддержка помогает развивать нашу страничку:
             </p>
-            <button id="donate_button">
+            <button id="donate_button" class="btn btn-info">
                 Пожертвовано 0 р
             </button>
         </section>
-        <script>
-            let count = 0; 
-            const button = document.getElementById("donate_button");
-            function increment() {
-                count++;
-                button.textContent = "Пожертвовано " + count + " р"; 
-            };
-            button.addEventListener("click", increment);
-        </script>
+        <!-- Форма обратной связи -->
+        <section class="mb-5" id="feedback">
+            <h3 class="h4">
+                Обратная связь
+            </h3>
+            <p>
+                Поделитесь своими идеями о том: какие фанфики вы хотели бы увидеть, или оставьте свои идеи по данной страничке.
+            </p>
+
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Ваше имя</label>
+                    <input type="text" class="form-control" id="name" placeholder="Введите имя">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Ваш email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Введите email">
+                </div>
+
+                <div class="col-12">
+                    <label for="message" class="form-label">Ваши предложения</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Напишите свои идеи..."></textarea>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success"> Отправить</button>
+                </div>
+            </form>
+        </section>
     </main>
+
+    <footer class="text-center p-3 bg-dark text-light">
+        <small>Страница создана для практики HTML и Bootstrap. Все права на аниме принадлежат создателям.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        let count = 0; 
+        const button = document.getElementById("donate_button");
+        function increment() {
+            count++;
+            button.textContent = "Пожертвовано " + count + " р"; 
+        };
+        button.addEventListener("click", increment);
+    </script>
 </body>
